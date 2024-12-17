@@ -8,4 +8,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Aplicacao\DTO\" />
+    <Folder Include="Aplicacao\Interfaces\" />
+    <Folder Include="Aplicacao\UseCases\" />
+    <Folder Include="Infraestrutura\Repositorio\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
+  </ItemGroup>
+
 </Project>
