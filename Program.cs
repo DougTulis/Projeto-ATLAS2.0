@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿
+using MySql.Data.MySqlClient;
 using Projeto_ATLAS.Infraestrutura.Servico;
 
 namespace Projeto_ATLAS

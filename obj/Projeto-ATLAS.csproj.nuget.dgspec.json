@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev6\\source\\repos\\Projeto-ATLAS\\Projeto-ATLAS\\Projeto-ATLAS.csproj": {}
+    "C:\\Users\\dotul\\source\\repos\\Projeto-ATLAS2.0\\Projeto-ATLAS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev6\\source\\repos\\Projeto-ATLAS\\Projeto-ATLAS\\Projeto-ATLAS.csproj": {
+    "C:\\Users\\dotul\\source\\repos\\Projeto-ATLAS2.0\\Projeto-ATLAS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev6\\source\\repos\\Projeto-ATLAS\\Projeto-ATLAS\\Projeto-ATLAS.csproj",
+        "projectUniqueName": "C:\\Users\\dotul\\source\\repos\\Projeto-ATLAS2.0\\Projeto-ATLAS.csproj",
         "projectName": "Projeto-ATLAS",
-        "projectPath": "C:\\Users\\dev6\\source\\repos\\Projeto-ATLAS\\Projeto-ATLAS\\Projeto-ATLAS.csproj",
-        "packagesPath": "C:\\Users\\dev6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev6\\source\\repos\\Projeto-ATLAS\\Projeto-ATLAS\\obj\\",
+        "projectPath": "C:\\Users\\dotul\\source\\repos\\Projeto-ATLAS2.0\\Projeto-ATLAS.csproj",
+        "packagesPath": "C:\\Users\\dotul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dotul\\source\\repos\\Projeto-ATLAS2.0\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dev6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dotul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,7 +52,7 @@
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[8.4.0, )"
             }
           },
           "imports": [
