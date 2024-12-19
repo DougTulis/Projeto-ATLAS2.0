@@ -6,13 +6,15 @@ namespace Projeto_ATLAS.Dominio.Entidades
     {
 
         public DateTime DataInicio { get; set; }
-        public DateTime DatFim { get; set; }
+        public DateTime DataFim { get; set; }
         public ETipoLocacao Tipo { get; set; }
         public EStatusLocacao Status { get; set; }
+        public Pessoa Condutor { get; set; } // Incluir no diagrama
+        public Pessoa Locatario { get; set; } // Incluir no diagrama
         public Veiculo Veiculo { get; set; }
-        public Condutor Condutor { get; set; }
-        public Locatario Locatario { get; set; }
-        public Pagamento Pagamento { get; set; }
+        // public Condutor Condutor { get; set; } -> retirar do diagrama
+        // public Locatario Locatario { get; set; } -> retirar do diagrama
+         public Pagamento Pagamento { get; set; }
         public IEnumerable<PendenciaFinanceira> PendenciaFinanceiras { get; set; } = new List<PendenciaFinanceira>();
     
     }

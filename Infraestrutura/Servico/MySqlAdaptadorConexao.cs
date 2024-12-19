@@ -11,7 +11,7 @@ namespace Projeto_ATLAS.Infraestrutura.Servico
 {
     public class MySqlAdaptadorConexao
     {
-        string conexaoSql = "Server=localhost;Port=3306;Database=Atlas;Uid=root;Pwd=1234;";
+        string conexaoSql = "Server=localhost;Port=3306;Database=Atlas;Uid=root;Pwd=nova_senha;";
 
         public MySqlConnection ObterConexao()
         {

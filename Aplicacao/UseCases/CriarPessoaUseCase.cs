@@ -1,5 +1,7 @@
-﻿using Projeto_ATLAS.Aplicacao.DTO;
+﻿using MySql.Data.MySqlClient;
+using Projeto_ATLAS.Aplicacao.DTO;
 using Projeto_ATLAS.Aplicacao.Interfaces;
+using Projeto_ATLAS.Infraestrutura.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -12,18 +14,20 @@ namespace Projeto_ATLAS.Aplicacao.UseCases
     public class CriarPessoaUseCase
     {
 
-        private readonly IConexao _conexao;
-        private readonly IPessoa _pessoa;
+        private readonly ICrud<PessoaDTO> _pessoaRepositorio;
 
-        public CriarPessoaUseCase(IConexao conexao)
+        public CriarPessoaUseCase(ICrud<PessoaDTO> pessoaRepositorio)
         {
-            _conexao = conexao;
+            _pessoaRepositorio = pessoaRepositorio;
         }
-
         public void Executar(PessoaDTO pessoa)
         {
-         
+            try {
+                _pessoaRepositorio.Adicionar(pessoa);
+            } catch(MySqlException e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
         }
-
     }
 }

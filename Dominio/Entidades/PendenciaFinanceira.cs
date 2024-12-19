@@ -4,6 +4,5 @@
     {
         public decimal ValorParcela { get; set; }
         public DateTime DataVencimento { get; set; }
-
     }
 }

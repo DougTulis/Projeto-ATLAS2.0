@@ -9,8 +9,5 @@ namespace Projeto_ATLAS.Dominio.Entidades
         public string Categoria { get; set; }
         public bool Disponibilidade { get; set; }
         public decimal ValorDiaria { get; set; }
-
-
-
     }
 }

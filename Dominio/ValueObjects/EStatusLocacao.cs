@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Projeto_ATLAS.Dominio.ValueObjects
 {
-    enum EStatusLocacao
+    public enum EStatusLocacao
     {
-
+       Ativa,
+       Finalizada, 
+       Cancelada
     }
 }

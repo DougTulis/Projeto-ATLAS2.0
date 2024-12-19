@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Projeto_ATLAS.Aplicacao.Interfaces
 {
-    interface IPessoa
+    public interface ICrud<T>
     {
-        public IEnumerable<PessoaDTO> Listar();
-        public void Adicionar(PessoaDTO pessoa);
-        public void Alterar(PessoaDTO pessoa);
-        public void Excluir(PessoaDTO pessoa);
+        public IEnumerable<T> Listar();
+        public void Adicionar(T objeto);
+        public void Alterar(T objeto);
+        public void Excluir(T objeto);
     }
 }

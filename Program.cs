@@ -1,5 +1,6 @@
 ﻿
 using MySql.Data.MySqlClient;
+using Projeto_ATLAS.Aplicacao.Menus;
 using Projeto_ATLAS.Infraestrutura.Servico;
 
 namespace Projeto_ATLAS
@@ -8,16 +9,8 @@ namespace Projeto_ATLAS
     {
         static void Main(string[] args)
         {
-            try{
-                var Conexao = new MySqlAdaptadorConexao().ObterConexao();
-                Conexao.Open();
-                Console.WriteLine(Conexao.State);
-                Conexao.Close();
-                Console.WriteLine(Conexao.State);
 
-            }catch (MySqlException e) {
-                Console.WriteLine(e.StackTrace);
-            }
+            MenuPrincipal.ExibirEExecutar();
         }
     }
 }

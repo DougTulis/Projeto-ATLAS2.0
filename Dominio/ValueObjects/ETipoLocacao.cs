@@ -1,6 +1,10 @@
 ﻿namespace Projeto_ATLAS.Dominio.ValueObjects
 {
-    enum ETipoLocacao
+   public enum ETipoLocacao
     {
+
+        Diaria,
+        Mensal,
+        Anual
     }
 }
