@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Projeto_ATLAS.Infraestrutura.Repositorio
 {
-    internal class PessoaRepositorio : IPessoa
+    internal class PessoaRepositorio : ICrud<PessoaDTO>
     {
         public void Adicionar(PessoaDTO pessoa)
         {

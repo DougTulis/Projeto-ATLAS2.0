@@ -13,7 +13,7 @@ namespace Projeto_ATLAS.Aplicacao.UseCases
     {
 
         private readonly IConexao _conexao;
-        private readonly IPessoa _pessoa;
+        private readonly ICrud<PessoaDTO> _pessoa;
 
         public CriarPessoaUseCase(IConexao conexao)
         {
